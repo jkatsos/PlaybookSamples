@@ -5,5 +5,5 @@
 
   tasks:
   - name: Test reachability to 10.10.10.10 using default vrf
-  net_ping:
-    dest: 10.10.10.10
+    net_ping:
+      dest: 10.10.10.10
