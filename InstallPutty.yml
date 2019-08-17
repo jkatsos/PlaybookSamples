@@ -2,10 +2,11 @@
 - name:  Basic Windows Playbook
   hosts: Windows
   vars:
+    ansible_port: 5986
     ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
   tasks:
     - name: install putty
       win_chocolatey: 
         name: putty.install
-        state: present
+        state: presentnsible all -m win_ping
