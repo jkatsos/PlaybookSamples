@@ -9,4 +9,4 @@
     - name: install putty
       win_chocolatey: 
         name: putty.install
-        state: presentnsible all -m win_ping
+        state: present
