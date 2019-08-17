@@ -1,8 +1,8 @@
 ---
 - name:  Basic Windows Playbook
-  hosts: mswin
+  hosts: Windows
   vars:
-    ansible_connection: Windows
+    ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
   tasks:
     - name: install putty
