@@ -1,6 +1,0 @@
----
-- name : Enable Security Ports in EC2
-  hosts: localhost 
-  gather_facts: False
-  roles:
-    - ec2-win-security

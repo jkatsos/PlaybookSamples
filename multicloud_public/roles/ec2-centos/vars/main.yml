@@ -1,9 +1,0 @@
-    vm_count: 1
-    security_group: 'sg-0e9563c812e6b53fc'
-    subnet_id: 'subnet-0225e0134a4367180'
-    ssh_key_name: 'etg-ec2-key-vsylvest'
-    instance_size: 't2.micro'
-    instance_tag: 'rhel'
-    rhel_ami_name: 'ami-67589505'
-    centos_ami_name: 'ami-08bd00d7713a39e7d'
-    region: 'ap-southeast-2'  
