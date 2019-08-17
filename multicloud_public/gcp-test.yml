@@ -1,0 +1,22 @@
+- name: Create IP address
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+    service_account_file: service_account.json
+    project: my-project
+    auth_kind: serviceaccount
+
+
+  tasks:
+
+   - name: Allocate an IP Address
+     gcp_compute_address:
+         state: present
+         name: 'test-address1'
+         region: 'us-west1'
+         project: "{{ project }}"
+         auth_kind: "{{ auth_kind }}"
+         service_account_file: "{{ service_account_file }}"
+         scopes: "{{ scopes }}"
