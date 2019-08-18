@@ -64,28 +64,28 @@
     azure_rm_publicipaddress:
       resource_group: "{{ resource_group }}"
       allocation_method: Static
-      name: mswin
+      name: andrewVM
 
   - name: Create windows virtual network inteface card
     azure_rm_networkinterface:
       resource_group: "{{ resource_group }}"
-      name: mswin
+      name: andrewVM
       virtual_network: "{{ vm_name }}"
       subnet: "{{ vm_name }}"
-      public_ip_name: mswin
+      public_ip_name: andrewVM
       security_group: "{{ vm_name }}"
 
   - name: Azure Create windows VM
     azure_rm_virtualmachine:
       resource_group: "{{ resource_group }}"
-      name: mswin
+      name: andrewVM
       vm_size: Standard_B4ms
       os_type: Windows
       admin_username: az-user
       admin_password: Password@123
-      network_interfaces: mswin
+      network_interfaces: andrewVM
       tags:
-        tag_ansible_group : mswin
+        tag_ansible_group : andrewVM
       image:
         publisher: MicrosoftWindowsServer
         offer: WindowsServer
