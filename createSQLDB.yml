@@ -7,7 +7,7 @@
     ansible_winrm_server_cert_validation: ignore
   tasks:
     - mssql_db:
-        login_host: Windows
+        login_host: 13.70.104.118
         login_user: ansible
         login_password: ansible
         name: jimsnewdb
