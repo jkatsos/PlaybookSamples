@@ -5,11 +5,9 @@
     ansible_port: 5986
     ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
-  tasks:
-    - mssql_db:
-        login_host: 13.70.104.118
-        login_user: ansible
-        login_password: ansible
-        name: jimsnewdb
-        state: present
+
+    tasks:
+      - name: Save the result of 'whoami' in 'whoami_out'
+        win_command: whoami
+        register: whoami_out
         
