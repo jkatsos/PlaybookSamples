@@ -7,8 +7,6 @@
     ansible_winrm_server_cert_validation: ignore
 
   tasks:
-    - name: Run command that only runs if folder exists and runs from a specific folder
-      win_command: wbadmin -backupTarget:C:\backup\
-      args:
-        chdir: C:\somedir\
-        creates: C:\backup\    
+    - name: Save the result of 'whoami' in 'whoami_out'
+      win_command: whoami
+      register: whoami_out    
