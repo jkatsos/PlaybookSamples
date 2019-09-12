@@ -1,10 +1,7 @@
 ---
 - name:  Basic SQL Server Playbook
   hosts: Windows
-  vars:
-    ansible_port: 5986
-    ansible_connection: winrm
-    ansible_winrm_server_cert_validation: ignore
+  
 
   tasks:
     - name: Save the result of 'whoami' in 'whoami_out'
