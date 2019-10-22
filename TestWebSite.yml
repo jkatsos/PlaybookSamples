@@ -1,6 +1,6 @@
 ---
 - name:  Basic IIS Website Test
-  hosts: Windows
+
   tasks:
     - name: Check that you can connect (GET) to a page and it returns a status 200
       uri:
