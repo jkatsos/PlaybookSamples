@@ -1,0 +1,9 @@
+---
+- name:  Basic Playbook to shutdown IIS server
+  hosts: all
+  
+  tasks:
+    - name: stop the iis service for failover test
+      win_service:
+        name: W3Svc
+        state: stopped
