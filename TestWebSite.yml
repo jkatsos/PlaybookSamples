@@ -7,11 +7,11 @@
       uri:
         url: http://13.239.26.91/
         return_content: true
-      register: results
+      register: result
 
 
-    - name: "Output test results"
-      debug:
-        msg: "{{ results.content }}"
- 
+    - name: "Copy the result into a varible to be used by next part of workflow"
+      set_stats:
+        data:
+          results_url:  "{{ result }}" 
         
