@@ -6,6 +6,12 @@
     - name: Check that you can connect (GET) to a page and it returns a status 200
       uri:
         url: http://13.239.26.91/
+        return_content: true
+      register: results
 
+
+    - name: "Output test results"
+      debug:
+        msg: "{{ results.content }}"
  
         

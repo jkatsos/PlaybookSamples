@@ -3,13 +3,9 @@
   hosts: all
 
   tasks:
-    - name: win ping test
-      win_ping: 
-        register: result
-       
     - name: Placeholder for real notification
       debug:
         msg:
-          - "Notify service management {{ result }}" 
+          - "Notify service management" 
           
         
