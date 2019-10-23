@@ -14,3 +14,7 @@
         msg:
           - "{{ ansible_host }}" 
   
+    - name: "Copy IP address for use in test playbooks"
+      set_stats:
+        data:
+          results_web_server_ip:  "{{ ansible_host }}" 
