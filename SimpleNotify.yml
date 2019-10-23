@@ -3,9 +3,6 @@
   hosts: all
 
   tasks:
-    - name: win ping test
-      win_ping: 
-
     - name: Placeholder for real notification
       debug:
         msg:
