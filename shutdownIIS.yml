@@ -8,4 +8,8 @@
         name: W3Svc
         state: stopped
 
-    - debug: {{ ansible_eth0.ipv4.address }}
+    - name: Display IP addrress of IIS Server
+      debug:
+        msg:
+          - "{{ ansible_eth0.ipv4.address }}" 
+  
