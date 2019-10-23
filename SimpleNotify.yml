@@ -3,10 +3,10 @@
   hosts: all
 
   tasks:
-    - name: Add notification call here
+    - name: win ping test
+      win_ping: 
+
     - debug:
       msg:
         - "Notify service management"
-
- 
         
