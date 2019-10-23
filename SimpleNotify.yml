@@ -3,9 +3,9 @@
   hosts: all
 
   tasks:
-    - name: Check that you can connect (GET) to a page and it returns a status 200
-      uri:
-        url: http://13.239.26.91/
+    - name: win ping test
+      win_ping: 
+      register: results
        
     - name: Placeholder for real notification
       debug:
