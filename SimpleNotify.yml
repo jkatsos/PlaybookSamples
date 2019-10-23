@@ -3,8 +3,15 @@
   hosts: all
 
   tasks:
+    - name: Check that you can connect (GET) to a page and it returns a status 200
+      uri:
+        url: http://13.239.26.91/
+        return_content: true
+      register: results
+
     - name: Placeholder for real notification
       debug:
         msg:
-          - "Notify service management"
+          - "Notify service management {{ results.content }}" 
+          
         
