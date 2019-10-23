@@ -6,6 +6,6 @@
     - name: Placeholder for real notification
       debug:
         msg:
-          - "Notify service management {{ results_url }}" 
+          - "Notify service management {{ results_url.content }}" 
           
         
