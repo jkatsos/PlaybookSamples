@@ -5,7 +5,7 @@
   tasks:
     - name: Check that you can connect (GET) to a page and it returns a status 200
       uri:
-        url: "http://{{ results_web_server_ip }}/"
+        url: http:// {{ results_web_server_ip }} /
         return_content: true
       register: result
 
