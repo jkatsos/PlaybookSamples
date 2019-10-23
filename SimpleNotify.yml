@@ -1,0 +1,12 @@
+---
+- name:  Basic Notification
+  hosts: all
+
+  tasks:
+    - name: Add notification call here
+    - debug:
+      msg:
+        - "Notify service management"
+
+ 
+        
