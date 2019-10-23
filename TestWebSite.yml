@@ -8,7 +8,6 @@
         url: http://{{ results_web_server_ip }}/
         return_content: true
       register: result
-      ignore_errors: yes
 
 
     - name: "Copy the result into a varible to be used by next part of workflow"
