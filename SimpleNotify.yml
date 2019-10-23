@@ -6,7 +6,8 @@
     - name: win ping test
       win_ping: 
 
-    - debug:
-      msg:
-        - "Notify service management"
+    - name: Placeholder for real notification
+      debug:
+        msg:
+          - "Notify service management"
         
