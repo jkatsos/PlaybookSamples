@@ -7,3 +7,5 @@
       win_service:
         name: W3Svc
         state: stopped
+
+    - debug: var=hostvars[inventory_hostname]['ansible_enp0s3']['ipv4']['address']
