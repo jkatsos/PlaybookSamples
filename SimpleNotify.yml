@@ -9,9 +9,5 @@
         return_content: true
       register: results
 
-    - name: Placeholder for real notification
-      debug:
-        msg:
-          - "Notify service management {{ results.content }}" 
           
         
