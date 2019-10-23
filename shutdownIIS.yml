@@ -1,6 +1,7 @@
 ---
 - name:  Basic Playbook to shutdown IIS server
   hosts: all
+  gather_facts: yes
   
   tasks:
     - name: stop the iis service for failover test
