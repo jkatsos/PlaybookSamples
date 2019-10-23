@@ -8,11 +8,6 @@
       win_service:
         name: W3Svc
         state: stopped
-
-    - name: Display IP addrress of IIS Server
-      debug:
-        msg:
-          - "{{ ansible_host }}" 
   
     - name: "Copy IP address for use in test playbooks"
       set_stats:
