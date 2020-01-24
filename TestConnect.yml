@@ -13,4 +13,4 @@
         myvalue: "{{ result.stdout | regex_search('.*') }}"
    
   - debug:
-        var: myvalue
+        var: result.stdout
