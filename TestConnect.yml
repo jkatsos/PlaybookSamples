@@ -10,7 +10,7 @@
     register: result
 
   - set_fact:
-        myvalue: "{{ results.stdout | regex_search(regexp,'\\1') | first }}"
+        myvalue: "{{ results.stdout | regex_search(regexp) }}"
     vars:
         regexp: 'value=\"([^"]+)'
   
