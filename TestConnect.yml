@@ -8,6 +8,10 @@
   - name: Checking Connectivity to Symantec Server (192.168.11.10) on port 32768
     win_shell:  Test-NetConnection -ComputerName 192.168.11.10 -Port 32768
     register: result
-
+  - set_fact:
+    myvalue: "{{ results.stdout | regex_search(regexp,'\\1') }}"
+    vars:
+      regexp: 'value=\"([^"]+)'
+  
   - debug:
-      var: result.stdout_lines
+        var: myvalue
