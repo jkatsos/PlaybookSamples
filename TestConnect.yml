@@ -10,7 +10,7 @@
     register: result
 
   - set_fact:
-        myvalue: "{{ results.stdout | regex_search('.*') }}"
+        myvalue: "{{ 'foo' | regex_search('.*') }}"
    
   
   - debug:
