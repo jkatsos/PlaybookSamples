@@ -15,3 +15,6 @@
   
   - debug:
         var: myvalue
+
+  - debug:
+        var: results.stdout
