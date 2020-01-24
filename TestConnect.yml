@@ -12,6 +12,5 @@
   - set_fact:
         myvalue: "{{ result.stdout | regex_search('.*') }}"
    
-  
   - debug:
         var: myvalue
