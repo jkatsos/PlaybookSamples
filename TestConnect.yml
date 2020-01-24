@@ -11,4 +11,4 @@
 
 
   - debug:
-        var: result.stdout_lines
+        var: result.stdout_lines.TcpTestSucceeded
