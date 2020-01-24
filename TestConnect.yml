@@ -1,6 +1,7 @@
 ---
-- name:  Basic IIS Website Test
+- name:  Basic Playbook to that runs Test-Connect
   hosts: all
+  gather_facts: yes
 
   tasks:
 
