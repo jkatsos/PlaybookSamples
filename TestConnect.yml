@@ -9,5 +9,10 @@
     win_shell:  Test-NetConnection -ComputerName localhost -Port 3389
     register: result
 
+  - set_fact:
+        myvalue: "{{ results.stdout | regex_search(regexp,'\\1') | first }}"
+    vars:
+        regexp: 'value=\"([^"]+)'
+  
   - debug:
-        var: result.stdout
+        var: myvalue
