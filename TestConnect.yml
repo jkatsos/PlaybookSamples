@@ -11,4 +11,4 @@
 
 
   - debug:
-        var: results.stdout
+        var: results.stdout_lines
