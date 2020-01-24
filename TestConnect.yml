@@ -1,9 +1,8 @@
-- hosts: win
-  gather_facts: no
+---
+- name:  Basic IIS Website Test
+  hosts: all
 
   tasks:
-  - name: checking connection to server
-    win_ping:
 
   - name: Checking Connectivity to Symantec Server (192.168.11.10) on port 32768
     win_shell:  Test-NetConnection -ComputerName 192.168.11.10 -Port 32768
