@@ -10,7 +10,10 @@
     register: result
 
   - set_fact:
-        myvalue: "{{ result.stdout | regex_search('.*') }}"
-   
+        myvalue: "{{ result.stdout | regex_search('nTcpTestSucceeded.*') }}"
+
+  - debug:
+        var: myvalue
+
   - debug:
         var: result.stdout
