@@ -1,0 +1,11 @@
+---
+- name:  Basic Notification
+  hosts: all
+
+  tasks:
+    - name: Placeholder for real notification
+      debug:
+        msg:
+          - "Notify service management" 
+          
+        
